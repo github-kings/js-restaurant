@@ -21,9 +21,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
-    new MiniCssExtractPlugin({
-      filename: '[contenthash].css',
-    }),
+    new MiniCssExtractPlugin(),
   ],
   module: {
     rules: [
